@@ -8,6 +8,7 @@ lint: format
 
 test:
 	go test ./...
+	tests/tests.sh $(shell pwd)
 
 pr: lint test check-rules
 
